@@ -17,6 +17,7 @@ HINTS:
     * Read the file backwards looking for '\n' characters
     * Once you have found enough '\n' characters, you have n lines to print
     * STAT CAN TELL YOU HOW BIG THE FILE IS, YOU DO NOT NEED TO MALLOC
+
 */
 #include <stdio.h>
 #include <fcntl.h>

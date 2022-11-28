@@ -1,4 +1,4 @@
-BINARIES = myls mystat mytail
+BINARIES = myls mytail
 
 all: $(BINARIES)
 
@@ -7,9 +7,6 @@ clean:
 
 myls: myls.c
 	gcc -o myls myls.c -Wall
-
-mystat: mystat.c
-	gcc -o mystat mystat.c -Wall
 
 mytail: mytail.c
 	gcc -o mytail mytail.c -Wall

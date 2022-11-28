@@ -18,8 +18,25 @@ Valid Usage:
 
 Useful interfaces: stat(), opendir(), readdir(), getcwd()
 
+Output should be:
+[inode number] [filename or directory name] [file type] [file mode] [number of links] [user] [group] [size in bytes] [modified time]
+
+File type will be displayed as:
+* f for regular file
+* d for directory
+* l for symlink
+* - for anything else
+
+This will be per file/directory being listed as shown:
+
+10 foo.txt f 600 2 prof gpeople 1024 Wed Feb 13 16:06:10 2013
+9 mydir d 777 1 prof root 512 Mon Nov 28 12:00:10 2022
+...
+
 HINTS:
-    * REUSE YOUR FUNCTION FOR PRINTING STAT DATA IN MYSTAT
+    * USE THE DOCUMENTATION FOR STAT
+    * A conditional structure will help with displaying the file type
+    * ctime() will help you print the time our properly
     * You may use a fixed sized array to build the file paths (2048 should be sufficient)
 */
 
